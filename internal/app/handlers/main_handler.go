@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+
 )
 
 func IndexPageHandler(c *gin.Context) {
@@ -17,4 +18,9 @@ func RegisterPageHandler(c *gin.Context) {
 
 func LoginPageHandler(c *gin.Context) {
 	c.HTML(http.StatusOK, "login.html", nil)
+}
+
+
+func MainPageHandler(c *gin.Context){
+	c.HTML(http.StatusOK, "main.html", nil)
 }
